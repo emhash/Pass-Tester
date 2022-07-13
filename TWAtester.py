@@ -37,12 +37,12 @@ def trying_to_passWord(email, index, password):
         return True
     return False
 if __name__ == "__main__":
-    print('\n---------- Welcome To TWA  pass  tester ----------\n\n------Be prepeare to kill your unlimited time------\n\n ==HIGH WARNING YOU ARE GOING TO USE ==\n\t== 23Lak 24Thousand 8Hundred And 60 PASSWORDS.== ')
+    print('\n---------- Welcome To TWA  pass  tester ----------\n\n------Be prepeare to kill your unlimited time------\n\n == HIGH WARNING YOU ARE GOING TO USE ==\n== 23Lak 24Thousand 8Hundred And 60 PASSWORDS.==\n')
     if not os.path.isfile(PASSWORD_FILE):
         print("File of wordlist not found: ", PASSWORD_FILE)
         sys.exit(0)
     password_data = open(PASSWORD_FILE, 'r').read().split("\n")
-    print("Selected the Pass list: ", PASSWORD_FILE)
+    print("\n\tGenerating passwords from : ", PASSWORD_FILE)
     email = input('\nType username or email of victim (perfectly) : ').strip()
     for index, password in zip(range(password_data.__len__()), password_data):
         password = password.strip()
