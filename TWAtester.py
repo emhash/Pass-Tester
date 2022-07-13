@@ -30,7 +30,7 @@ file=open('wordtext.txt','r')
 email=str(raw_input('Enter Email/Username : ').strip())
 
 print ("\n Target Email ID : ",email)
-print "\n Matching words from list. Remember it Will kill your long time . . ."
+print ("\n Matching words from list. Remember it Will kill your long time . . .")
 
 i=0
 while file:
