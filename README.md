@@ -6,9 +6,15 @@ Type some specific commands to run this tool or git in kali Linux or termux(for 
 
 apt update -y 
 apt upgrade -y
+pkg install git
+pip install requests
+pip2 install requests
+pip2 install mechanize
 apt install python 
 apt install python2
 apt install python3
+pip2 install beautifulsoup
+pip3 install beautifulsoup4
 apt install git -y
 git clone https://github.com/e-h-a/Pass-Tester
 ls
