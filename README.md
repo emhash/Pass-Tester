@@ -1,9 +1,10 @@
 # Pass-Tester
 
-Enjoy Your time killing.
+Enjoy Your time killing. 
+** NEW PASSWORD LIST 2022 USED **
 
 Type some specific commands to run this tool or git in kali Linux or termux(for android)
-
+# USE THESE COMMANDS FOR RUN TOOL SUCESSFULLY -->>
 apt update -y 
 apt upgrade -y
 pkg install git
