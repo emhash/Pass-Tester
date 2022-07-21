@@ -1,7 +1,7 @@
 # Pass-Tester
 
 Enjoy Your time killing. 
-# ** USED NEW PASSWORD LIST 2022 **
+# ** USED NEW PASSWORD LIST 2022 BUT THE TOOL WON'T CRACK PASSWORD.🙃 **
 
 Type some specific commands to run this tool or git in kali Linux or termux(for android)
 # USE THESE COMMANDS FOR RUN TOOL SUCESSFULLY -->>
